@@ -58,12 +58,8 @@ h2{
     background-color: red;
 }
 
-.img{
-    flex-grow: 1;
-
-    /* debug */
-    height: 300px;
-    background-color: lightseagreen;
+span{
+    display: inline-block;
 }
 
 /* HEADER */
@@ -101,8 +97,8 @@ header > .flex{
     padding: 0 10px;
 }
 
-.btn-start{
-    padding: 5px;
+.btn{
+    padding: 8px 15px;
     background-color: blue;
 }
 /* MAIN */
@@ -115,29 +111,33 @@ main{
 
 .hero-section{
     background-color: rgb(180 208 231);
-    padding: 30px 0 0;
+    padding: 50px 0 0;
 }
 
-.hero-section > .container{
+.hero-section .flex{
     position: relative;
-    top: 30px;
+    top: 50px;
 }
 
 .hero-section h1{
-
-    /* debug */
-    background-color: lightcoral;
-    height: 80px;
+    font-size: 5rem;
 }
 
 .hero-content{
     width: 30%;
-
-    /* debug */
-    height: 300px;
-    background-color: lightgreen;
 }
 
+.hero-section .img{
+    width: 70%;
+}
+
+.hero-content :nth-last-child(-n+3){
+    margin-top: 30px;
+}
+
+.arrow{
+    font-size: 3rem;
+}
 /* BUSINESS PLANS */
 
 .business-plans{
