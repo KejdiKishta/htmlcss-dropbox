@@ -33,6 +33,10 @@ a{
     width: 60%;
 }
 
+.w-70{
+    width: 70%;
+}
+
 .container{
     margin: auto;
 }
@@ -254,3 +258,30 @@ main{
 }
 
 /* FOOTER */
+footer{
+    background-color: black;
+    min-height: 400px;
+    padding: 40px 0;
+}
+
+footer > .flex{
+    justify-content: space-between;
+}
+
+.footer-col{
+    width: calc(100% / 5 - 40px);
+
+    /* debug */
+    border: 1px solid white;
+    height: 300px;
+}
+
+.lang{
+    display: inline-block;
+    margin-top: 10px;
+    border-top: 1px solid white;
+    width: 15%;
+    /* debug */
+    height: 10px;
+    background-color: blue;
+}
