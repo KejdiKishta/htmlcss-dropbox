@@ -10,11 +10,11 @@ img{
     max-width: 100%;
 }
 
-ul{
+ul:not(.check-list){
     list-style-type: none;
 }
 
-a{
+a:not(.buy-now){
     text-decoration: none;
     color: inherit;
 }
@@ -52,14 +52,15 @@ body{
 
 h2{
     margin: 30px 0;
-
-    /* debug */
-    height: 50px;
-    background-color: red;
+    font-size: 2rem;
 }
 
 span{
     display: inline-block;
+}
+
+.b{
+    font-weight: bold;
 }
 
 /* HEADER */
@@ -138,41 +139,77 @@ main{
 .arrow{
     font-size: 3rem;
 }
+
 /* BUSINESS PLANS */
 
 .business-plans{
     padding: 100px 0 40px;
-    /* debug */
-    background-color: blueviolet;
-    min-height: 500px;
 }
 
-.plan-payments{
+.plan-payments span:first-child{
+    margin-right: 30px;
+}
 
-    /* debug */
-    background-color: brown;
-    height: 40px;
+.plan-head, .plan-description{
+    border: 1px solid gray;
+}
+
+.plan-head{
+    text-align: center;
+    padding: 5px;
+}
+
+.plan-description{
+    padding: 20px 20px 0;
+}
+
+.plan-description > *{
+    margin-bottom: 1em;
+}
+
+.plan-description div.btn{
+    text-align: center;
+}
+
+.plan-description ul:nth-child(4){
+    margin: 30px 0;
+}
+
+h4{
+    margin-top: 50px;
+}
+
+.plan-description li{
+    padding: 5px 0;
 }
 
 .plan-type{
     justify-content: space-between;
     margin: 30px 0;
-
-    /* debug */
-    height: 500px;
 }
 
 .plan-type > *{
     width: calc(100% / 3 - 30px);
-
-    /* debug */
-    background-color: brown;
 }
 
-.enterprise-plan2{
-    /* debug */
-    height: 100px;
-    background-color: brown;
+.check-list{
+    padding-left: 15px;
+}
+
+.enterprise-plan2 .btn{
+    padding: 10px 40px;
+}
+
+.row-plan{
+    width: 70%;
+}
+
+.row-plan > *{
+    margin-bottom: 1em;
+}
+
+.row-plan p{
+    margin-top: 2em;
 }
 
 /* PARTNERS */
