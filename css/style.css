@@ -21,8 +21,17 @@ a{
 
 /* COMMON */
 
+body{
+    font-size: 0.8rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
 .flex{
     display: flex;
+}
+
+.c-w{
+    color: white;
 }
 
 :root{
@@ -65,9 +74,7 @@ header{
     left: 0;
     width: 100%;
     z-index: 9999;
-
-    /* debug */
-    background-color: blue;
+    background-color: white;
 }
 
 header > .flex{
@@ -76,13 +83,28 @@ header > .flex{
 }
 
 .left-header, .right-header{
-    width: 30%;
-    height: var(--header-height);
-
-    /* debug */
-    background-color: green;
+    width: 35%;
 }
 
+.left-header > .flex{
+    gap: 15px;
+    align-items: center;
+    height: var(--header-height);
+    padding: 0 10px;
+}
+
+.right-header > .flex{
+    justify-content: flex-end;
+    align-items: center;
+    height: var(--header-height);
+    gap: 15px;
+    padding: 0 10px;
+}
+
+.btn-start{
+    padding: 5px;
+    background-color: blue;
+}
 /* MAIN */
 
 /* HERO SECTION */
