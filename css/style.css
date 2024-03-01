@@ -171,13 +171,14 @@ main{
     margin-right: 30px;
 }
 
-.plan-head, .plan-description{
+.plan-col{
     border: 1px solid gray;
 }
 
 .plan-head{
     text-align: center;
     padding: 5px;
+    border-bottom: 1px solid gray;
 }
 
 .plan-description{
