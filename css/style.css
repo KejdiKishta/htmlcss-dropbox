@@ -10,7 +10,7 @@ img{
     max-width: 100%;
 }
 
-ul:not(.check-list){
+ul{
     list-style-type: none;
 }
 
@@ -30,10 +30,6 @@ body{
     display: flex;
 }
 
-.c-w{
-    color: white;
-}
-
 :root{
     --header-height: 60px;
 }
@@ -48,6 +44,7 @@ body{
 
 .container{
     margin: auto;
+    max-width: 1200px;
 }
 
 h2{
@@ -63,7 +60,23 @@ span{
     font-weight: bold;
 }
 
-/* HEADER */
+.c-w{
+    color: white;
+}
+
+hr{
+    width: 20%;
+    margin-top: 20px;
+}
+
+.check{
+    color: blue;
+}
+
+li.flex{
+    gap: 5px
+}
+/* !HEADER */
 
 header{
     position: fixed;
@@ -77,10 +90,6 @@ header{
 header > .flex{
     justify-content: space-between;
     align-items: center;
-}
-
-.left-header, .right-header{
-    width: 35%;
 }
 
 .left-header > .flex{
@@ -102,9 +111,10 @@ header > .flex{
     padding: 8px 15px;
     background-color: blue;
 }
-/* MAIN */
 
-/* HERO SECTION */
+/* !MAIN */
+
+/* *HERO SECTION */
 
 main{
     margin-top: var(--header-height);
@@ -140,7 +150,7 @@ main{
     font-size: 3rem;
 }
 
-/* BUSINESS PLANS */
+/* *BUSINESS PLANS */
 
 .business-plans{
     padding: 100px 0 40px;
@@ -176,7 +186,7 @@ main{
 }
 
 h4{
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 .plan-description li{
@@ -212,7 +222,7 @@ h4{
     margin-top: 2em;
 }
 
-/* PARTNERS */
+/* *PARTNERS */
 
 .partners{
     padding: 50px 0;
@@ -228,7 +238,7 @@ h4{
     background-color: aqua;
 }
 
-/* DROPBOX BUSINESS */
+/* *DROPBOX BUSINESS */
 .drop-business{
     padding: 50px 0;
 }
@@ -262,7 +272,7 @@ h4{
     background-color: brown;
 }
 
-/* TEAM MEMBERS */
+/* *TEAM MEMBERS */
 .team{
     padding: 50px 0;
 
@@ -287,7 +297,7 @@ h4{
     border: 1px solid white;
 }
 
-/* BUSINESS FREE TRIAL */
+/* *BUSINESS FREE TRIAL */
 
 .business-free-trial{
     padding: 50px 0;
@@ -305,7 +315,7 @@ h4{
     background-color: blueviolet;
 }
 
-/* FREQUENT QUESTION */
+/* *FREQUENT QUESTION */
 .questions li{
     border-top: 1px solid black;
     border-bottom: 1px solid black;
@@ -316,7 +326,7 @@ h4{
     background-color: blueviolet;
 }
 
-/* FOOTER */
+/* !FOOTER */
 footer{
     background-color: black;
     min-height: 400px;
