@@ -14,7 +14,7 @@ ul{
     list-style-type: none;
 }
 
-a:not(.buy-now){
+a:not(.bluelink){
     text-decoration: none;
     color: inherit;
 }
@@ -28,6 +28,10 @@ body{
 
 .flex{
     display: flex;
+}
+
+.wrap{
+    flex-wrap: wrap;
 }
 
 :root{
@@ -79,6 +83,12 @@ hr{
 
 li.flex{
     gap: 5px
+}
+
+img[src$=".svg"]:not(.black-member){
+    filter: invert(1);
+    padding: 40px;
+    margin: auto;
 }
 
 /* !HEADER */
@@ -262,45 +272,68 @@ h4{
     width: calc(100% / 3 - 20px);
 }
 
+/* *BUSINESS CLIENTS */
 .business-clients{
-    padding: 150px 0 100px;
-    /* debug */
-    background-color: chartreuse;
-
+    padding: 80px 0;
 }
 
 .business-clients a{
     display: inline-block;
-    
-    /* debug */
-    width: 100%;
-    height: 20px;
-    background-color: brown;
+    margin-top: 30px;
 }
 
 /* *TEAM MEMBERS */
-.team{
-    padding: 50px 0;
-
-    /* debug */
-    min-height: 200px;
-    background-color: chocolate;
-}
 
 .members{
     width: calc(100% / 3);
+}
 
-    /* debug */
-    height: 100px;
-    border: 1px solid black;
+.flex.members > div{
+    width: 50%;
+    aspect-ratio: 1;
+    align-items: center;
 }
 
 .team-description{
-    flex-grow: 1;
+    padding: 20px;
+    background-color: rgb(245 245 245);
+}
 
-    /* debug */
-    height: 100px;
-    border: 1px solid white;
+.team-description > p{
+    padding: 40px 0;
+}
+
+.designit{
+    background-color: rgb(162 211 155);
+    border: 10px solid rgba(255, 255, 255, 0.5);
+}
+
+.asu{
+    background-color: rgb(97 8 43);
+}
+
+.uff{
+    background-color: rgb(0 147 206);
+}
+
+.topps{
+    background-color: rgb(255 28 28);
+}
+
+.bicycle{
+    background-color: rgb(213 0 31);
+}
+
+.hearst{
+    background-color: rgb(180 208 231);
+}
+
+.lonely{
+    background-color: rgb(13 36 129);
+}
+
+.channel{
+    background-color: rgb(255 216 48);
 }
 
 /* *BUSINESS FREE TRIAL */
@@ -310,26 +343,38 @@ h4{
     background-color: rgb(180 208 231);
 }
 
-.business-free-trial h2{
-    width: 60%;
+.business-free-trial .container{
+    align-items: center;
+    justify-content: space-between;
 }
 
-.free-trial-button{
-    flex-grow: 1;
+.business-free-trial h2{
+    width: 50%;
+    color: rgb(97 8 43);
+}
 
-    /* debug */
-    background-color: blueviolet;
+.free-trial-btn{
+    padding: 8px 30px;
+    background-color: white;
 }
 
 /* *FREQUENT QUESTION */
-.questions li{
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    padding: 20px 0;
+.questions{
+    padding: 100px 0;
+}
 
-    /* debug */
-    height: 30px;
-    background-color: blueviolet;
+.questions h2{
+    margin: 0;
+    padding: 40px 0;
+    border-bottom: 1px solid black;
+}
+
+.questions li{
+    border-bottom: 1px solid black;
+    padding: 30px 30px 30px 0;
+}
+.questions .flex{
+    justify-content: space-between;
 }
 
 /* !FOOTER */
