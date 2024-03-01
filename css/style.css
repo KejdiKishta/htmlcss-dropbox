@@ -52,6 +52,10 @@ h2{
     font-size: 2rem;
 }
 
+h3{
+    font-size: 1.3rem;
+}
+
 span{
     display: inline-block;
 }
@@ -76,6 +80,7 @@ hr{
 li.flex{
     gap: 5px
 }
+
 /* !HEADER */
 
 header{
@@ -136,10 +141,6 @@ main{
 
 .hero-content{
     width: 30%;
-}
-
-.hero-section .img{
-    width: 70%;
 }
 
 .hero-content :nth-last-child(-n+3){
@@ -226,21 +227,30 @@ h4{
 
 .partners{
     padding: 50px 0;
-
-    /* debug */
-    background-color: palevioletred;
 }
 
 .partners-content{
-    width: 30%;
+    width: 40%;
+    padding: 50px 15px;
+}
 
-    /* debug */
-    background-color: aqua;
+.partners-content > p{
+    padding: 20px 0;
+}
+
+.w-btn{
+    display: inline-block;
+    padding: 7px 15px;
+    border: 1px solid black;
 }
 
 /* *DROPBOX BUSINESS */
 .drop-business{
     padding: 50px 0;
+}
+
+.drop-business p{
+    padding: 20px 0;
 }
 .business{
     justify-content: space-between;
@@ -250,10 +260,6 @@ h4{
 
 .business > .col{
     width: calc(100% / 3 - 20px);
-
-    /* debug */
-    height: 200px;
-    background-color: gray;
 }
 
 .business-clients{
