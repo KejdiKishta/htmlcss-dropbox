@@ -381,7 +381,7 @@ h4{
 footer{
     background-color: black;
     min-height: 400px;
-    padding: 40px 0;
+    padding: 60px 0;
 }
 
 footer > .flex{
@@ -390,18 +390,24 @@ footer > .flex{
 
 .footer-col{
     width: calc(100% / 5 - 40px);
+}
 
-    /* debug */
-    border: 1px solid white;
-    height: 300px;
+.footer-col ul{
+    padding: 20px 0 70px;
+}
+
+.footer-col li{
+    padding: 7px 0;
 }
 
 .lang{
     display: inline-block;
     margin-top: 10px;
     border-top: 1px solid white;
-    width: 15%;
-    /* debug */
-    height: 10px;
-    background-color: blue;
+    padding: 20px 20px 20px 0;
+    font-size: .6rem;
+}
+
+.lang span:nth-child(2){
+    padding: 0 5px;
 }
