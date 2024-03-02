@@ -78,7 +78,7 @@ span{
     color: white;
 }
 
-hr :not(.header-underline){
+hr:not(.header-underline){
     width: 20%;
     margin-top: 20px;
 }
