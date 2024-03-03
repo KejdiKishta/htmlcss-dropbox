@@ -484,3 +484,33 @@ footer > .flex{
 .lang span:nth-child(2){
     padding: 0 5px;
 }
+
+.act-deact {
+    padding: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.hidden-list {
+    display: none;
+    list-style: none;
+    padding: 0;
+}
+
+.hidden-list li{
+    padding: 8px;
+}
+
+#show-list{
+    position: absolute;
+    display: none;
+}
+
+#show-list:checked + .act-deact + .hidden-list {
+    display: block;
+}
+
+.flag{
+    width: 25px;
+    padding: 0 5px;
+}
